@@ -20,7 +20,7 @@ class SinatraRocketTest < MiniTest::Test
     assert last_response.body.include? 'Hello, World!'
   end
 
-  def test_it_says_hello_to_a_person
+  def test_it_has_info
     get '/info'
     assert last_response.body.include? "Information"
   end
