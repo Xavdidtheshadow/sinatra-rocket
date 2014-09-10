@@ -3,17 +3,19 @@
   -# %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
   %title
     Title!
-  /css
+  -# css
   %link{rel: 'stylesheet', type: 'text/css', href: '/styles.css'}
   %link{rel: 'stylesheet', type: 'text/css', href: '//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'}
   %link{rel: 'stylesheet', type: 'text/css', href: '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'}
 
-  / js
+  -# js
   %script{src: "//code.jquery.com/jquery-1.10.2.min.js", type:"text/javascript"}
 
-  / favicon
+  -# favicon
   -# %link{:rel => 'icon', :type => 'image/png', :href => '/images/favicon.ico'}
-%h1
-  Header
 
-#{yield}
+.container
+  %h1
+    Header
+
+  #{yield}
