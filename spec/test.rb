@@ -25,9 +25,4 @@ class SinatraRocketTest < MiniTest::Test
     assert last_response.body.include? 'Header'
   end
 
-  def test_display_doesnt_show_header
-    get '/naked'
-    refute last_response.body.include? 'Header'
-  end
-
 end
